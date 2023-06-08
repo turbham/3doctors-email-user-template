@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Windsor-Bold";
+        src: url(./fonts/WindsorProBold.TTF);
+      }
+      @font-face {
+        font-family: "sf-pro";
+        src: url(./fonts/SFProDisplay-Light.ttf);
+      }
+
+      #container {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        position: relative;
+      }
+      .herotext {
+        color: #000000;
+        text-transform: uppercase;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #first {
+        width: 100%;
+        height: 300px;
+        animation: fade-first 6s linear infinite;
+        color: #ffffff;
+        background-color: #faa551;
+        background-image: url(./images/img-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      #second {
+        width: 100%;
+        height: 300px;
+        animation: fade-second 6s linear infinite;
+        color: #ffffff;
+        background-color: #048324;
+        background-image: url(./images/img-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      #third {
+        width: 100%;
+        height: 300px;
+        animation: fade-third 6s linear infinite;
+        color: #ffffff;
+        background-color: #131313;
+        background-image: url(./images/img-3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes fade-first {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        3% {
+          opacity: 1;
+          visibility: visible;
+        }
+        30% {
+          opacity: 1;
+          visibility: visible;
+        }
+        33% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      @keyframes fade-second {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        33% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        36% {
+          opacity: 1;
+          visibility: visible;
+        }
+        63% {
+          opacity: 1;
+          visibility: visible;
+        }
+        66% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      @keyframes fade-third {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        66% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        69% {
+          opacity: 1;
+          visibility: visible;
+        }
+        96% {
+          opacity: 1;
+          visibility: visible;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      #orders_details {
+        width: 596px;
+        color: #ffffff;
+        background: #5f2301 url(/images/Group.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: cover;
+        padding: 80px 65px;
+      }
+
+      @media screen and (max-width: 496px) {
+        #template_width {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        #orders_details {
+          padding: 50px 20px;
+        }
+      }
+    </style>
+    <title>3doctors-email-template</title>
+  </head>
+  <body
+    style="
+      text-align: center;
+      margin: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      -webkit-text-size-adjust: 100%;
+      background-image: url(./images/Background_1.png);
+    "
+    align="center"
+  >
+    <div style="text-align: center">
+      <table
+        id="template_width"
+        align="center"
+        style="
+          text-align: center;
+          vertical-align: top;
+
+          background-color: #ffffff;
+          padding: 40px 35px 10px 35px;
+        "
+        width="600"
+      >
+        <tbody>
+          <tr>
+            <td
+              style="
+                width: 596px;
+                vertical-align: top;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+              "
+              width="596"
+            >
+              <img
+                style="width: 180px; max-width: 180px"
+                alt="Logo"
+                src="./images/3Doktors brown.png"
+                align="left"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        id="template_width"
+        align="center"
+        style="
+          text-align: center;
+          vertical-align: top;
+
+          background-color: #ffffff;
+          padding: 0 35px;
+          color: red;
+        "
+        width="600"
+      >
+        <tbody>
+          <tr>
+            <td>
+              <hr />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table
+        id="template_width"
+        align="center"
+        style="
+          text-align: left;
+          vertical-align: top;
+
+          background-color: #ffffff;
+          padding: 0 35px;
+          color: red;
+        "
+        width="600"
+      >
+        <tbody>
+          <tr>
+            <td>
+              <h1
+                style="
+                  font-size: 20px;
+                  line-height: 24px;
+                  font-family: 'Helvetica', Arial, sans-serif;
+                  font-weight: 600;
+                  text-decoration: none;
+                  color: #000000;
+                "
+              >
+                Hi, Lawal
+              </h1>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        id="template_width"
+        align="center"
+        style="
+          text-align: left;
+          vertical-align: top;
+
+          background-color: #ffffff;
+          padding: 10px 35px 40px 35px;
+        "
+        width="600"
+      >
+        <tbody>
+          <tr>
+            <td id="orders_details" width="596">
+              <h1
+                style="
+                  font-size: 24px;
+                  line-height: 24px;
+                  font-weight: 600;
+                  font-family: 'windsor-bold', sans-serif;
+                  text-decoration: none;
+                  color: #ffffff;
+                "
+              >
+                Order Receipt - No #12345
+              </h1>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: #ffffff;
+                  font-family: 'sf-pro', sans-serif;
+                "
+              >
+                <p style="color: #ffffff">Subtotal</p>
+                <p style="color: #ffffff">$300.00</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: #ffffff;
+                  font-family: 'sf-pro', sans-serif;
+                "
+              >
+                <p style="color: #ffffff">Estimated Shipping</p>
+                <p style="color: #ffffff">$5.00</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: #ffffff;
+                  font-family: 'sf-pro', sans-serif;
+                "
+              >
+                <p style="color: #ffffff">Estimated Tax</p>
+                <p style="color: #ffffff">$0.00</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: #ffffff;
+                  font-family: 'sf-pro', sans-serif;
+                "
+              >
+                <p style="color: #faa551; font-weight: 700; font-size: 20px">
+                  Total
+                </p>
+                <p style="color: #faa551; font-weight: 700; font-size: 20px">
+                  $305.00
+                </p>
+              </div>
+              <p
+                style="
+                  font-family: 'windsor-bold', sans-serif;
+                  color: #faa551;
+                  font-weight: 700;
+                  font-size: 20px;
+                "
+              >
+                Thank you for choosing 3Doctors
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        id="template_width"
+        align="center"
+        style="
+          text-align: left;
+          vertical-align: top;
+
+          background-color: #ffffff;
+          padding: 10px 35px 40px 35px;
+        "
+        width="600"
+      >
+        <tbody>
+          <tr>
+            <td>
+              <div id="container">
+                <div class="herotext" id="first">
+                  <span
+                    style="
+                      font-family: 'windsor-bold', sans-serif;
+                      font-size: 32px;
+                      text-align: center;
+                    "
+                  >
+                    HEALTH AND STYLE
+                  </span>
+                  <span
+                    style="
+                      text-align: center;
+                      font-family: 'sf-pro', sans-serif;
+                      font-size: 12px;
+                    "
+                  >
+                    Revolutionize Your Lifestyle: <br />
+                    Smart Smoking for a healthier You!
+                  </span>
+                </div>
+                <div class="herotext" id="second">
+                  <span
+                    style="
+                      font-family: 'windsor-bold', sans-serif;
+                      font-size: 32px;
+                      text-align: center;
+                    "
+                  >
+                    LIFESTYLE
+                  </span>
+                  <span
+                    style="
+                      text-align: center;
+                      font-family: 'sf-pro', sans-serif;
+                      font-size: 12px;
+                    "
+                  >
+                    Elevate your style with innovative, <br />
+                    fashion-forward clothing accessories.
+                  </span>
+                </div>
+                <div class="herotext" id="third">
+                  <span
+                    style="
+                      font-family: 'windsor-bold', sans-serif;
+                      font-size: 32px;
+                      text-align: center;
+                    "
+                  >
+                    SPORT GEAR
+                  </span>
+                  <span
+                    style="
+                      text-align: center;
+                      font-family: 'sf-pro', sans-serif;
+                      font-size: 12px;
+                    "
+                  >
+                    Breaking Boundaries, Equipping Everyone: <br />
+                    Embrace All-Inclusive Sport Gear!
+                  </span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
